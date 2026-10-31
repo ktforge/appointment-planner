@@ -2,7 +2,7 @@
 
 This is a small React app I built for the Appointment Planner challenge project on Codecademy's Full-Stack Engineer path. It has two pages: one for adding contacts and one for adding appointments with those contacts.
 
-Live site: https://ktforge.github.io/appointment-planner/
+Live site: coming soon on Netlify
 
 ## What it does
 
@@ -27,7 +27,7 @@ My phone `pattern` regex needed the `-` inside the brackets escaped (`[\-. ]`). 
 
 My contact and appointment titles weren't showing up bold. The starter CSS styles `.tile.tile-title`, which needs both classes on the same element, and I only had `tile-title` on it. Adding `tile` fixed it.
 
-The starter was set up with Create React App, which is deprecated now, so I moved it over to Vite. Getting it running on GitHub Pages meant telling React Router about the `/appointment-planner/` base path, and copying `index.html` to `404.html` in the deploy so refreshing on `/contacts` or `/appointments` doesn't give a 404.
+The starter was set up with Create React App, which is deprecated now, so I moved it over to Vite. It's hosted on Netlify, and I had to add a `_redirects` file so refreshing on `/contacts` or `/appointments` loads the app instead of a 404, since those pages only exist inside React Router.
 
 ## Running it
 
@@ -36,7 +36,7 @@ npm install
 npm run dev
 ```
 
-Then open the local address Vite prints (usually http://localhost:5173/appointment-planner/).
+Then open the local address Vite prints (usually http://localhost:5173/).
 
 Example: add Chris, 937-555-1234, chris@test.com on the Contacts page. On the Appointments page, pick Chris, add "Camera check" for 2026-11-02 at 14:30, and this tile shows up:
 

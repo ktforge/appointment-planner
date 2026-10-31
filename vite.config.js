@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  // github pages puts the site under /appointment-planner/, so assets need this prefix
-  base: "/appointment-planner/",
+  // netlify serves the site from the domain root
+  base: "/",
 });

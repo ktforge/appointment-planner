@@ -46,8 +46,6 @@ function App() {
         />
       </Route>,
     ),
-    // the site lives under /appointment-planner/ on github pages, so the routes start there
-    { basename: import.meta.env.BASE_URL },
   );
 
   return <RouterProvider router={router} />;
