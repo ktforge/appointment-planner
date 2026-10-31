@@ -2,7 +2,7 @@
 
 This is a small React app I built for the Appointment Planner challenge project on Codecademy's Full-Stack Engineer path. It has two pages: one for adding contacts and one for adding appointments with those contacts.
 
-Live site: coming soon on Netlify
+**Live site:** https://appointment-planner-devante.netlify.app
 
 ## What it does
 
